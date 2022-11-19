@@ -31,13 +31,24 @@ def shorten_Link(fullLink, linkName):
     except:
         status = data['url']['status']
         print('Error! The status error: ', status)
-
-#added user input
-link = input('Enter a link to shorten: >> ')
-name = input('Give a name to the link: >> ')
-
-#execute command
-shorten_Link(link, name)
-
+        
+while True:
     
+    user_loop = input("\nDo you want to shorten a hyperlink?(y/n)?: ")
     
+    #added user input
+    if user_loop == 'y':
+        print("<<==================================>>")
+        link = input('Enter a link to shorten: >> ')
+        name = input('\nGive a name to the link: >> ')
+        print("<<==================================>>")
+        print("Below is the Title and the new URL")
+        #execute command
+        shorten_Link(link, name)
+    
+    if user_loop == 'n':
+        break
+    
+
+            
+        
