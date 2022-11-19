@@ -2,7 +2,7 @@
 import requests
 
 #function for the parameters
-def shortenLink(fullLink, linkName):
+def shorten_Link(fullLink, linkName):
 
     #This is an API generated in cutt.ly
     APIkey = 'c68fc2d0a74f7d9cb9e6738b5286df2a6d6c7'
@@ -20,5 +20,18 @@ def shortenLink(fullLink, linkName):
     data = request.json()
     
     print('')
+    
+    #conditions
+    try:
+        title = data['url']['title']
+        short_link = data['url']['shortLink']
+        
+        print('Title: ', title)
+        print('Link: ', short_link)
+    except:
+        status = data['url']['status']
+        print('Error! The status error: ', status)
+        
+
     
     
