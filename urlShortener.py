@@ -26,8 +26,9 @@ def shorten_Link(fullLink, linkName):
         title = data['url']['title']
         short_link = data['url']['shortLink']
         
+        print("Below is the Title and the new URL")
         print('Title: ', title)
-        print('Link: ', short_link)
+        print('New Link: ', short_link)
     except:
         status = data['url']['status']
         print('Error! The status error: ', status)
@@ -42,7 +43,6 @@ while True:
         link = input('Enter a link to shorten: >> ')
         name = input('\nGive a name to the link: >> ')
         print("<<==================================>>")
-        print("Below is the Title and the new URL")
         #execute command
         shorten_Link(link, name)
     
