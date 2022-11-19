@@ -14,3 +14,11 @@ def shortenLink(fullLink, linkName):
     payLoad = {'key':APIkey, 
                'short':fullLink, 
                'name':linkName}
+    
+    #using the requests library
+    request = requests.get(BASEurl, params=payLoad)
+    data = request.json()
+    
+    print('')
+    
+    
