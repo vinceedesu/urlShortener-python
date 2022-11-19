@@ -31,7 +31,19 @@ def shorten_Link(fullLink, linkName):
         print('New Link: ', short_link)
     except:
         status = data['url']['status']
-        print('Error! The status error: ', status)
+        if status == 1:
+            print('Error! The status error: ', status, ' >> The shortened link comes from the domain that shortens the link')
+        if status == 2:
+            print('Error! The status error: ', status,' >> The entered link is not a link')
+        if status == 3:
+            print('Error! The status error: ', status,' >> The preferred link name / alias is already taken')
+        if status == 4:
+            print('Error! The status error: ', status,' >> Invalid API key')
+        if status == 5:
+            print('Error! The status error: ', status,' >> The link has not passed the validation. Includes invalid characters')
+        if status == 6:
+            print('Error! The status error: ', status,' >> The link provided is from a blocked domain')
+        
         
 while True:
     
