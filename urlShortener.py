@@ -9,3 +9,8 @@ def shortenLink(fullLink, linkName):
 
     #This is the base url for the urlshortener
     BASEurl = 'https://cutt.ly/api/api.php'
+    
+   #create dictionary for the payLoad
+    payLoad = {'key':APIkey, 
+               'short':fullLink, 
+               'name':linkName}
