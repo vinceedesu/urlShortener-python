@@ -36,7 +36,8 @@ def shorten_Link(fullLink, linkName):
 link = input('Enter a link to shorten: >> ')
 name = input('Give a name to the link: >> ')
 
-        
+#execute command
+shorten_Link(link, name)
 
     
     
