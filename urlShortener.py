@@ -31,6 +31,11 @@ def shorten_Link(fullLink, linkName):
     except:
         status = data['url']['status']
         print('Error! The status error: ', status)
+
+#added user input
+link = input('Enter a link to shorten: >> ')
+name = input('Give a name to the link: >> ')
+
         
 
     
