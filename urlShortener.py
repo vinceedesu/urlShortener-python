@@ -38,7 +38,7 @@ while True:
     
     #added user input
     if user_loop == 'y':
-        print("<<==================================>>")
+        print("\n<<==================================>>")
         link = input('Enter a link to shorten: >> ')
         name = input('\nGive a name to the link: >> ')
         print("<<==================================>>")
