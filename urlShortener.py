@@ -31,6 +31,8 @@ def shorten_Link(fullLink, linkName):
         print('New Link: ', short_link)
     except:
         status = data['url']['status']
+        
+        #updated the condition status error di ko nasama ito sa demo pero pahabol lang sir thank u po
         if status == 1:
             print('Error! The status error: ', status, ' >> The shortened link comes from the domain that shortens the link')
         if status == 2:
