@@ -57,7 +57,7 @@ while True:
         print("\n<<==================================>>")
         link = input('\nEnter a link to shorten: >> ')
         name = input('\nGive a name to the link: >> ')
-        print("<<==================================>>")
+        print("\n<<==================================>>")
         #execute command
         shorten_Link(link, name)
     
