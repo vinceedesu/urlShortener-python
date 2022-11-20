@@ -35,17 +35,18 @@ def shorten_Link(fullLink, linkName):
         #updated the condition status error di ko nasama ito sa demo pero pahabol lang sir thank u po
         if status == 1:
             print('Error! The status error: ', status, ' >> The shortened link comes from the domain that shortens the link')
-        if status == 2:
+        elif status == 2:
             print('Error! The status error: ', status,' >> The entered link is not a link')
-        if status == 3:
+        elif status == 3:
             print('Error! The status error: ', status,' >> The preferred link name / alias is already taken')
-        if status == 4:
+        elif status == 4:
             print('Error! The status error: ', status,' >> Invalid API key')
-        if status == 5:
+        elif status == 5:
             print('Error! The status error: ', status,' >> The link has not passed the validation. Includes invalid characters')
-        if status == 6:
+        elif status == 6:
             print('Error! The status error: ', status,' >> The link provided is from a blocked domain')
-        
+        else:
+            print('Uknown Error!')
         
 while True:
     
